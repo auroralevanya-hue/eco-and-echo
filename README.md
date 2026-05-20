@@ -3,6 +3,8 @@
 > **Breathe clean. Earn green.**
 > AR-powered air-quality questing app with Xiaomi Mi ecosystem integration. Walk to clean-air zones, log PM2.5 readings, solve climate puzzles, mint NFT eco-badges that track real CO₂ offset.
 
+🌐 **Live demo:** https://eco-and-echo.vercel.app
+
 ## ✨ Features
 
 - **🗺️ Eco Map** — 5 quest types (rooftop garden, mangrove, urban forest, river greenway, PM2.5 corridor) plotted by AQI severity
