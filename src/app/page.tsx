@@ -88,12 +88,12 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14 max-w-2xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-12 max-w-2xl mx-auto"
           >
             {stats.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-2xl font-bold font-display gradient-text">{s.value}</div>
-                <div className="text-xs text-emerald-100/40 mt-1">{s.label}</div>
+              <div key={s.label} className="glass px-3 py-4 text-center">
+                <div className="text-2xl md:text-3xl font-bold font-display gradient-text leading-tight">{s.value}</div>
+                <div className="text-[10px] text-emerald-100/40 mt-1.5 uppercase tracking-wider">{s.label}</div>
               </div>
             ))}
           </motion.div>

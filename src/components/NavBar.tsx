@@ -17,8 +17,8 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 glass-strong border-t border-emerald-400/10 px-2 pb-[env(safe-area-inset-bottom)]">
-      <div className="max-w-lg mx-auto flex items-center justify-around relative">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 glass-strong border-t border-emerald-400/15 px-2 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl">
+      <div className="max-w-lg mx-auto flex items-stretch justify-between">
         {navItems.map(({ href, icon: Icon, label }) => {
           const active = pathname === href || pathname.startsWith(href + "/");
           return (
@@ -26,7 +26,7 @@ export default function NavBar() {
               key={href}
               href={href}
               className={cn(
-                "flex flex-col items-center gap-1 py-2.5 px-3 rounded-xl transition-all relative",
+                "flex flex-col items-center justify-center gap-1 py-2.5 flex-1 rounded-xl transition-all relative",
                 active ? "text-emerald-400" : "text-emerald-100/40 hover:text-emerald-100/70"
               )}
             >
@@ -36,9 +36,9 @@ export default function NavBar() {
                   active && "drop-shadow-[0_0_6px_rgba(52,232,158,0.7)]"
                 )}
               />
-              <span className="text-[10px] font-medium">{label}</span>
+              <span className="text-[10px] font-medium leading-none">{label}</span>
               {active && (
-                <div className="absolute bottom-0 w-6 h-0.5 bg-emerald-400 rounded-full" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-0.5 bg-emerald-400 rounded-full shadow-[0_0_8px_rgba(52,232,158,0.7)]" />
               )}
             </Link>
           );
