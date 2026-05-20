@@ -1,0 +1,12 @@
+{
+  "name": "Eco & Echo — Air Quality Quest",
+  "short_name": "Eco&Echo",
+  "description": "Breathe clean. Earn green. AR quest powered by Xiaomi Mi Air ecosystem.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#061915",
+  "theme_color": "#0fb37a",
+  "icons": [
+    { "src": "/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" }
+  ]
+}
